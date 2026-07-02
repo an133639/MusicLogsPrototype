@@ -30,32 +30,67 @@ body {
 }
 
 .header {
-    margin-bottom: 28px;
+    margin-bottom: 10px;
 }
 
 .header h1 {
-    font-size: 34px;
-    font-weight: 700;
+    font-size: 30px;
+    font-weight: 500;
+    text-align: left;
+    margin-bottom: 20px;
+    width: 100%;
+
 }
 
 .header p {
-    margin-top: 6px;
+    margin-top: 0px;
     color: #A5A5A5;
     font-size: 15px;
+    margin-bottom: 10px;
 }
 
 .searchContainer {
-    margin-bottom: 24px;
+    display:flex;
+    gap: 15px;
+    margin-bottom: 0px;
 }
 
 .searchBar {
-    width: 100%;
-    padding: 15px;
+    width: 98%;
+    padding: 10px;
     border: none;
     border-radius: 14px;
     background: #2B2B2B;
     color: white;
     font-size: 16px;
+    margin-bottom: 24px;
+}
+
+.dropdown {
+    text-align: left;
+}
+
+.dropdown-item {
+    text-align: left;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.dropdown-item:hover {
+    background:#9D9D9D;
+    color:#111111;
+}
+
+.add-button {
+    width: 50px;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    background:#2ECC71;
+    color: #111111;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 24px;
 }
 
 .searchBar::placeholder {
@@ -69,7 +104,7 @@ body {
 .tabs {
     display: flex;
     gap: 10px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .tabs button {
@@ -117,4 +152,81 @@ body {
 
 .emptyState p {
     line-height: 1.6;
+}
+
+.playlist{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.playlist-item{
+    display:flex;
+    align-items:center;
+    background:#2b2b2b;
+    padding:12px;
+    border-radius:14px;
+}
+
+.cover{
+    width:65px;
+    height:65px;
+    border-radius:8px;
+    object-fit:cover;
+    margin-right:15px;
+}
+
+.song-info{
+    flex:1;
+}
+
+.song-info p{
+    margin:3px 0;
+    color:#bdbdbd;
+}
+
+.song-info small{
+    color:#888;
+}
+
+.song-buttons{
+    display:flex;
+    flex-direction:column;
+    gap:8px;
+}
+
+.delete-btn{
+    background:#cc4444;
+    color:white;
+    border:none;
+    padding:8px 12px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.delete-btn:hover{
+    background:#b33636;
+}
+
+.listen-btn{
+    background:#2ecc71;
+    color:white;
+    border:none;
+    padding:8px;
+    border-radius:8px;
+    cursor:pointer;
+    transition:.2s;
+}
+
+.listen-btn:hover{
+    background:#28b765;
+}
+
+.listened-btn{
+    background:#555;
+    color:white;
+    border:none;
+    padding:8px;
+    border-radius:8px;
+    cursor:default;
 }
