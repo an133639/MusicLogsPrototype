@@ -60,7 +60,7 @@ function addCustomSong(input) {
     title,
     artist,
     album: "",
-    cover: "/MusicLogs/albumcovers/unknown_song.png",
+    cover: "/MusicLogsPrototype/albumcovers/unknown_song.png",
     type: "song",
     listened: false,
   };
